@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ---------------------------------------------------------------------------- #
 #           _____ _____ _______       ____  _      ______  _____               |
 #          |_   _|  __ \__   __|/\   |  _ \| |    |  ____|/ ____|              |
@@ -31,3 +33,5 @@ slstables -I OUTPUT -t raw -p tcp -j DROP
 slstables -A OUTPUT -t raw -p tcp -j DROP
 slstables -p OUTPUT DROP
 slstables -p FORWARD DROP
+
+echo 'iptables by SdSLS installed'
