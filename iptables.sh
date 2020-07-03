@@ -31,7 +31,7 @@ slstables -I OUTPUT -t raw -p udp -j DROP
 slstables -A OUTPUT -t raw -p udp -j DROP
 slstables -I OUTPUT -t raw -p tcp -j DROP
 slstables -A OUTPUT -t raw -p tcp -j DROP
-slstables -p OUTPUT DROP
-slstables -p FORWARD DROP
+slstables -P OUTPUT DROP
+slstables -P FORWARD DROP
 
 echo 'iptables by SdSLS installed'
